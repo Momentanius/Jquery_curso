@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JQuery Eventos</title>
+    <!-- CDN -->
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+        $('#campo1').keydown(function(){
+
+          alert('apertou!!!');
+
+        });;
+
+        $('#campo1').keypress(function(){
+
+          alert('apertou, mas não funfa com esc kakaka!!!');
+
+        });;
+
+      });
+
+    </script>
+  </head>
+  <body>
+
+    <input id="campo1" type="text" style="margin: 10px 15px; border: 1px solid blue; width: 400px; height: 200px;" />
+
+  </body>
+</html>
