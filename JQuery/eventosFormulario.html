@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JQuery Eventos</title>
+    <!-- CDN -->
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+        $('.campo1').focus(function(){
+
+          //
+
+        });;
+
+        $('.campo1').blur(function(){
+
+          alert('perdeu o foco!!!');
+
+        });;
+
+        $('.campo1').change(function(){
+
+          alert('mudou');
+
+        });;
+
+      });
+
+    </script>
+  </head>
+  <body>
+
+    <select class="campo1">
+      <option value="1">
+        opcao 1
+      </option>
+      <option value="2">
+        opcao 2
+      </option>
+    </select>
+
+  </body>
+</html>
