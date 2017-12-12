@@ -1,3 +1,7 @@
+var rodada = 1;
+
+var matrizJogo = Array(3);
+
 $(document).ready( function(){
 
   $('#botao').click( function(){
@@ -29,5 +33,28 @@ $(document).ready( function(){
 
   }) ;
 
+    $('.jogada').click(function(){
+
+      var id_campo_clicado = this.id;
+      jogada(id_campo_clicado);
+    });
+
+    function jogada(id){
+      var icone = '';
+      var ponto = 0;
+
+      if ((rodada % 2) == 1){
+        icone = 'url("imagens/marcacao_1.png")';
+        ponto = -1;
+      }else{
+        icone = 'url("imagens/marcacao_2.png")';
+        ponto = 1;
+      }
+
+      rodada++;
+
+      $('#'+id).css('background-image',icone);
+
+    }
 
 });
