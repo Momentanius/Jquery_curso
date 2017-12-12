@@ -3,9 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 
-		<title>Jogo da velha</title>
+		<title>Jogo da velha Guiga 2.0</title>
 		<script src="jquery-3.2.1.js"></script>
 		<script src="jogo.js"></script>
+
 	</head>
 
 	<body style="margin: 15px">
@@ -18,21 +19,23 @@
 				<tr>
 					<td align="center"><img src="imagens/jogador_1.png" />
 						<br />
-						<input type="text" maxlength="10" placeholder="até 10 caractéres"/>
+						<input id="entrada_apelido_jogador_1"type="text" maxlength="10" placeholder="até 10 caractéres"/>
 					</td>
-					<td align="center"><img src="imagens/iniciar.png" /></td>
+					<td align="center"> <img id="botao" src="imagens/iniciar.png" /></td>
 					<td align="center"><img src="imagens/jogador_2.png" />
 						<br />
-						<input type="text" maxlenght="10" placeholder="até 10 caracteres" />
+						<input id="entrada_apelido_jogador_2" type="text" maxlenght="10" placeholder="até 10 caracteres" />
 					</td>
 				</tr>
 			</table>
 		</div>
 
-		<div id="palco_jogo" style="margin-top: 50px; text-align: center;">
+		<div id="palco_jogo"  style="display: none; margin-top: 50px; text-align: center;">
 
 			<div style="display: inline-block">
 				<img src="imagens/jogador_1.png" />
+				<br />
+				<span id="nome_jogador_1"> </span>
 			</div>
 
 			<div style="display: inline-block">
@@ -93,9 +96,12 @@
 
 			<div style="display: inline-block">
 				<img src="imagens/jogador_2.png" />
+				<br />
+				<span id="nome_jogador_2"> </span>
 			</div>
 
 		</div>
 
 	</body>
+
 </html>
